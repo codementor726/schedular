@@ -68,15 +68,6 @@ class JobsControllerTest extends TestCase
                 'exceptions' => false
             ]
         ]);
-        $data = array(
-            'title' => 'test',
-            'content' => 'test content',
-            'deadline' => '3023-09-30',
-            'status' => 1,
-            'assigned' => 1,
-            'createdby' => 2,
-            'assessment' => 0
-        );
         $request = $client->request('POST', '/api/job',[
             'form_params' => [
                 'title' => 'title',
@@ -100,15 +91,6 @@ class JobsControllerTest extends TestCase
                 'exceptions' => false
             ]
         ]);
-        $data = array(
-            'title' => 'test',
-            'content' => 'test content',
-            'deadline' => '3023-09-30',
-            'status' => 1,
-            'assigned' => 1,
-            'createdby' => 2,
-            'assessment' => 0
-        );
         $request = $client->request('PUT', '/api/job/4',[
             'form_params' => [
                 'title' => 'title',
